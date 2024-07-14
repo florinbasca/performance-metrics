@@ -14,7 +14,7 @@ Calculate most important 10 metrics for a strategy based on trades - use functio
 - win_rate_days:      percent of winning days vs total trading days
 - beta:               beta to benchmark (SPY by default)
 
-The metrics were chosen based on their general use and application to multiple types of strategies. However each strategy has it's own particularity and will require custom metrics. Not included here are slippage and fees, which are extremely important to include if we want an optimal Sharpe at higher leverage.
+The metrics were chosen based on their general use and application to multiple types of strategies. However each strategy has it's own particularity and will require custom metrics. Not included here are slippage and fees, which are extremely important to include if we want an optimal Sharpe at higher leverage. We may also be curious about the composition of the universe and how much exposure or pnl attribution we may have during trading for each symbol or group (sector).
 
 Returns in both long-only or long/short strategies are determined by comparing profit and loss (PnL) against equity. This task does not specify a required input for initial equity, but the function assumes that starting equity equals the maximum gross exposure during the trading period as a default value in case it is not provided. In practice, there is always an initial equity, and depending on the account configuration, there is also a maximum leverage limit set by the broker.
 
